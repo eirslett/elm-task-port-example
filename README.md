@@ -28,3 +28,4 @@ The Elm runtime must also be updated to use the modified version. In order to do
 in the elm-stuff folder, replace the source of the `core` package with the contents of the `feature/task-ports` branch.
 Delete the `build-artifacts` folder if it's present.
 
+Run elm-make again on the project, and it should work!
