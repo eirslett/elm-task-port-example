@@ -4,6 +4,7 @@ As discussed on [Elm-Discuss](https://groups.google.com/forum/#!searchin/elm-dis
 would be useful to be able to define Elm port interactions as tasks.
 
 This project is an example implementation of such a proposal. It consists of three parts:
+
 1. A modified version of the elm-compiler
   [GitHub repo, on the feature branch "feature/task-ports"](https://github.com/eirslett/elm-compiler/tree/feature/task-ports)
 2. A modified version of the elm-core library
