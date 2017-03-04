@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test Elm App</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="Main.js"></script>
+<script>
+    var app = Elm.Main.embed(document.getElementById('app'));
+    app.ports.getUser.handle(function (params, callback) {
+        if (params.userId === 456) {
+            callback(null, {
+                name: 'John',
+                age: 94
+            });
+        } else {
+            callback("oops", null)
+        }
+    });
+
+</script>
+</body>
+</html>
